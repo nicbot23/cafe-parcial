@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Listado de Cafés</h2>
+
+            <div style="margin-left: 20px;">
+            <table class="table table-sm">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Región</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let cafe of cafes; let i = index">
+                    <th>{{i + 1}}</th>
+                    <td>{{cafe.nombre}}</td>
+                    <td>{{cafe.tipo}}</td>
+                    <td>{{cafe.region}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4>Cantidad de cafés</h4>
+            <p>Cantidad de cafés de origen: {{ calcularCafesOrigen() }}</p>
+            <p>Cantidad de cafés blend: {{ calcularCafesBlend() }}</p>
+            </div>
+        </div>
+    </div>
+    
+</div>

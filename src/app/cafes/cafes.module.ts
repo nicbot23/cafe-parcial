@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { CafesComponent } from './cafes.component';
 import { RouterModule } from '@angular/router';
 import { CafesRoutingmodule } from './cafes.routing';
+import { ListarCafesComponent } from './components/listar-cafes/listar-cafes.component';
 
 
 
 @NgModule({
   declarations: [
-    CafesComponent
+    CafesComponent,
+    ListarCafesComponent
   ],
   imports: [
     CommonModule,
